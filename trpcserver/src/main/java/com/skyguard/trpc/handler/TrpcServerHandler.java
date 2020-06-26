@@ -37,7 +37,7 @@ public class TrpcServerHandler {
                     methodKeyBuilder.append(argTypes[i]).append("_");
                     argTypeClasses[i] = Class.forName(argTypes[i]);
                 }
-                requestObjects = new Object[argTypes.length];
+                requestObjects = request.getRequestObjects();
                 String methodKey = methodKeyBuilder.toString();
                 method = cacheMethods.get(methodKey);
                 if(method == null){
