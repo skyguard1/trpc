@@ -12,7 +12,7 @@
     <artifactId>trpc-spring</artifactId>
 
     <properties>
-        <spring.version>6.0.18</spring.version>
+        <spring.version>6.1.13</spring.version>
     </properties>
 
 
